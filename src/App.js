@@ -21,6 +21,27 @@ function App() {
   const [load, upadateLoad] = useState(true);
 
   useEffect(() => {
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('show');
+        } else {
+          entry.target.classList.remove('show');
+        }
+      });
+    });
+
+    // Query all hidden elements and observe them
+    const hiddenElements = document.querySelectorAll('.hidden');
+    hiddenElements.forEach((el) => observer.observe(el));
+
+    // Cleanup observer on unmount
+    return () => {
+      hiddenElements.forEach((el) => observer.unobserve(el));
+    };
+  }, []);
+  
+  useEffect(() => {
     const timer = setTimeout(() => {
       upadateLoad(false);
     }, 1200);

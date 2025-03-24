@@ -1,19 +1,15 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import { Container, Row } from "react-bootstrap";
 import Button from "react-bootstrap/Button";
 import Particle from "../Particle";
-import pdf from "../../Assets/../Assets/Vignesh_Kumar_Resume.pdf";
 import { AiOutlineDownload } from "react-icons/ai";
-import { Document, Page, pdfjs } from "react-pdf";
-import "react-pdf/dist/esm/Page/AnnotationLayer.css";
-pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.min.js`;
 
 function ResumeNew() {
-  const [width, setWidth] = useState(1200);
-
-  useEffect(() => {
-    setWidth(window.innerWidth);
-  }, []);
+  // If your PDF is in the public folder
+  const pdfPath = process.env.PUBLIC_URL + "/Vignesh_Kumar_Resume.pdf";
+  
+  // Add parameters to hide toolbar and other UI elements
+  const pdfWithParams = `${pdfPath}#toolbar=0&navpanes=0&scrollbar=0&statusbar=0`;
 
   return (
     <div>
@@ -22,7 +18,7 @@ function ResumeNew() {
         <Row style={{ justifyContent: "center", position: "relative" }}>
           <Button
             variant="primary"
-            href={pdf}
+            href={pdfPath}
             target="_blank"
             style={{ maxWidth: "250px" }}
           >
@@ -32,15 +28,26 @@ function ResumeNew() {
         </Row>
 
         <Row className="resume">
-          <Document file={pdf} className="d-flex justify-content-center">
-            <Page pageNumber={1} scale={width > 786 ? 1.7 : 0.6} />
-          </Document>
+          <div className="d-flex justify-content-center" style={{ width: "50%" }}>
+            <iframe
+              src={pdfWithParams}
+              width="140%" 
+              height="1200px"
+              style={{
+                border: "none",
+                overflow: "hidden",
+                maxWidth: "2900px" // Adjust this value as needed
+              }}
+              title="Resume"
+              frameBorder="0"
+            />
+          </div>
         </Row>
 
         <Row style={{ justifyContent: "center", position: "relative" }}>
           <Button
             variant="primary"
-            href={pdf}
+            href={pdfPath}
             target="_blank"
             style={{ maxWidth: "250px" }}
           >

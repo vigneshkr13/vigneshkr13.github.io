@@ -8,7 +8,7 @@ function Particle() {
       params={{
         particles: {
           number: {
-            value: 160,
+            value: 600,
             density: {
               enable: true,
               value_area: 1500,
@@ -35,6 +35,10 @@ function Particle() {
         },
         interactivity: {
           events: {
+            onhover: {
+              enable: true,
+              mode: "attract", // This makes particles move towards the cursor
+            },
             onclick: {
               enable: true,
               mode: "push",
@@ -43,6 +47,10 @@ function Particle() {
           modes: {
             push: {
               particles_nb: 1,
+            },
+            attract: { // Attract particles to cursor
+              distance: 200, // The distance within which particles will be attracted to the cursor
+              duration: 0.4, // Duration of the attract effect
             },
           },
         },

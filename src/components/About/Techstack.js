@@ -1,69 +1,52 @@
 import React from "react";
-import { Col, Row } from "react-bootstrap";
-import { CgCPlusPlus } from "react-icons/cg";
-import {
-  DiJavascript1,
-  DiReact,
-  DiNodejs,
-  DiMongodb,
-  DiPython,
-  DiGit,
-  DiJava,
-} from "react-icons/di";
-import {
-  SiRedis,
-  SiFirebase,
-  SiNextdotjs,
-  SiSolidity,
-  SiPostgresql,
-} from "react-icons/si";
-import { TbBrandGolang } from "react-icons/tb";
+import { Col, Row, OverlayTrigger, Tooltip } from "react-bootstrap";
+import { DiPython, DiJava, DiJavascript1, DiNodejs, DiGit, DiPostgresql } from "react-icons/di";
+import { SiR, SiPowerbi, SiMicrosoftazure, SiAmazonaws, SiSnowflake, SiApachekafka, SiApachespark, SiHadoop, SiTalend, SiInformatica, SiFlask, SiGraphql, SiNextdotjs ,SiPostgresql} from "react-icons/si";
+import { FaHtml5, FaCss3Alt, FaAws, FaDatabase } from "react-icons/fa";
+import { TbApi, TbBrandDatabricks } from "react-icons/tb";
+import { GrReactjs } from "react-icons/gr";
+
+// Tooltip Wrapper Function
+const renderTooltip = (props, text) => <Tooltip {...props}>{text}</Tooltip>;
 
 function Techstack() {
+  const techStack = [
+    { icon: <DiPython />, name: "Python" },
+    { icon: <DiJava />, name: "Java" },
+    { icon: <DiJavascript1 />, name: "JavaScript" },
+    { icon: <DiNodejs />, name: "Node.js" },
+    { icon: <DiGit />, name: "Git" },
+    { icon: <SiPostgresql />, name: "PostgreSQL" },
+    { icon: <SiR />, name: "R" },
+    { icon: <SiPowerbi />, name: "Power BI" },
+    { icon: <SiMicrosoftazure />, name: "Microsoft Azure" },
+    { icon: <SiAmazonaws />, name: "AWS" },
+    { icon: <SiSnowflake />, name: "Snowflake" },
+    { icon: <SiApachekafka />, name: "Apache Kafka" },
+    { icon: <SiApachespark />, name: "Apache Spark" },
+    { icon: <FaDatabase />, name: "Database" },
+    { icon: <FaDatabase />, name: "Hadoop" },
+    { icon: <SiTalend />, name: "Talend" },
+    { icon: <SiInformatica />, name: "Informatica" },
+    { icon: <SiFlask />, name: "Flask" },
+    { icon: <SiGraphql />, name: "GraphQL" },
+    { icon: <SiNextdotjs />, name: "Next.js" },
+    { icon: <FaHtml5 />, name: "HTML5" },
+    { icon: <FaCss3Alt />, name: "CSS3" },
+    { icon: <GrReactjs />, name: "React.js" },
+    { icon: <TbApi />, name: "API" },
+    { icon: <TbBrandDatabricks />, name: "Databricks" },
+  ];
+
   return (
     <Row style={{ justifyContent: "center", paddingBottom: "50px" }}>
-      <Col xs={4} md={2} className="tech-icons">
-        <CgCPlusPlus />
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <DiJavascript1 />
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <TbBrandGolang />
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <DiNodejs />
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <DiReact />
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <SiSolidity />
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <DiMongodb />
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <SiNextdotjs />
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <DiGit />
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <SiFirebase />
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <SiRedis />
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <SiPostgresql />
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <DiPython />
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <DiJava />
-      </Col>
+      {techStack.map((tech, index) => (
+        <Col xs={4} md={2} className="tech-icons" key={index}>
+          <OverlayTrigger placement="top" overlay={(props) => renderTooltip(props, tech.name)}>
+            <div>{tech.icon}</div>
+          </OverlayTrigger>
+        </Col>
+      ))}
     </Row>
   );
 }

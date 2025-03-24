@@ -2,89 +2,82 @@ import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import ProjectCard from "./ProjectCards";
 import Particle from "../Particle";
-import leaf from "../../Assets/Projects/leaf.png";
-import emotion from "../../Assets/Projects/emotion.png";
-import editor from "../../Assets/Projects/codeEditor.png";
-import chatify from "../../Assets/Projects/chatify.png";
+import music_sub from "../../Assets/Projects/music_sub.png";
+import taxi_trip from "../../Assets/Projects/taxi_trip.webp";
+import customer_purchase from "../../Assets/Projects/customer_purchase.webp";
+import job_search from "../../Assets/Projects/job_search1.png";
 import suicide from "../../Assets/Projects/suicide.png";
-import bitsOfCode from "../../Assets/Projects/blog.png";
+import slope_one from "../../Assets/Projects/slope_one.png";
 
 function Projects() {
   return (
     <Container fluid className="project-section">
       <Particle />
-      <Container>
-        <h1 className="project-heading">
-          My Recent <strong className="purple">Works </strong>
+      <Container className="pt-5 pb-5">
+        <h1 className="project-heading text-center text-white">
+          My Recent <strong className="purple">Works</strong>
         </h1>
-        <p style={{ color: "white" }}>
-          Here are a few projects I've worked on recently.
+        <p className="text-center text-white mb-5">
+          Explore some of the most exciting projects I have worked on.
         </p>
-        <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
-          <Col md={4} className="project-card">
+        <Row className="d-flex justify-content-center">
+          <Col md={4} className="project-card mb-4">
             <ProjectCard
-              imgPath={chatify}
+              imgPath={job_search}
               isBlog={false}
-              title="Chatify"
-              description="Personal Chat Room or Workspace to share resources and hangout with friends build with react.js, Material-UI, and Firebase. Have features which allows user for realtime messaging, image sharing as well as supports reactions on messages."
-              ghLink="https://github.com/soumyajit4419/Chatify"
-              demoLink="https://chatify-49.web.app/"
+              title="NLP Job Search App"
+              description="AI-powered job search application built with Flask and FastText, optimizing job categorization."
+              ghLink="https://github.com/vigneshkr13/NLP_JobSearch_App"
             />
           </Col>
 
-          <Col md={4} className="project-card">
+          <Col md={4} className="project-card mb-4">
             <ProjectCard
-              imgPath={bitsOfCode}
+              imgPath={slope_one}
               isBlog={false}
-              title="Bits-0f-C0de"
-              description="My personal blog page build with Next.js and Tailwind Css which takes the content from makdown files and renders it using Next.js. Supports dark mode and easy to write blogs using markdown."
-              ghLink="https://github.com/soumyajit4419/Bits-0f-C0de"
-              demoLink="https://blogs.soumya-jit.tech/"
+              title="Recommender System Using Personalized Slope One"
+              description="A personalized recommender system using Slope One with improved neighborhood-based filtering."
+              ghLink="https://github.com/vigneshkr13/personalized-weighted-slope-one-recommender"
             />
           </Col>
 
-          <Col md={4} className="project-card">
+          <Col md={4} className="project-card mb-4">
             <ProjectCard
-              imgPath={editor}
+              imgPath={customer_purchase}
               isBlog={false}
-              title="Editor.io"
-              description="Online code and markdown editor build with react.js. Online Editor which supports html, css, and js code with instant view of website. Online markdown editor for building README file which supports GFM, Custom Html tags with toolbar and instant preview.Both the editor supports auto save of work using Local Storage"
-              ghLink="https://github.com/soumyajit4419/Editor.io"
-              demoLink="https://editor.soumya-jit.tech/"              
+              title="Customer Purchase Analysis"
+              description="Predicts customer purchase behavior based on browsing history using KNN and Decision Trees."
+              ghLink="https://github.com/vigneshkr13/Customer-Purchase-Analysis/tree/main"
             />
           </Col>
 
-          <Col md={4} className="project-card">
+          <Col md={4} className="project-card mb-4">
             <ProjectCard
-              imgPath={leaf}
+              imgPath={music_sub}
               isBlog={false}
-              title="Plant AI"
-              description="Used the plant disease dataset from Kaggle and trained a image classifer model using 'PyTorch' framework using CNN and Transfer Learning with 38 classes of various plant leaves. The model was successfully able to detect diseased and healthy leaves of 14 unique plants. I was able to achieve an accuracy of 98% by using Resnet34 pretrained model."
-              ghLink="https://github.com/soumyajit4419/Plant_AI"
-              demoLink="https://plant49-ai.herokuapp.com/"
+              title="AWS Music Subscription Application"
+              description="A cloud-based music subscription application using AWS (EC2, S3, Lambda)."
+              ghLink="https://github.com/vigneshkr13/AWS-Music-Subscription-Application/tree/main"
             />
           </Col>
 
-          <Col md={4} className="project-card">
+          <Col md={4} className="project-card mb-4">
             <ProjectCard
               imgPath={suicide}
               isBlog={false}
-              title="Ai For Social Good"
-              description="Using 'Natural Launguage Processing' for the detection of suicide-related posts and user's suicide ideation in cyberspace  and thus helping in sucide prevention."
-              ghLink="https://github.com/soumyajit4419/AI_For_Social_Good"
-              // demoLink="https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley" <--------Please include a demo link here
+              title="AI for Social Good"
+              description="Using NLP to detect suicide-related posts and ideations, aiding in prevention efforts."
+              ghLink="https://github.com/vigneshkr13/NLP_JobSearch_App"
             />
           </Col>
 
-          <Col md={4} className="project-card">
+          <Col md={4} className="project-card mb-4">
             <ProjectCard
-              imgPath={emotion}
+              imgPath={taxi_trip}
               isBlog={false}
-              title="Face Recognition and Emotion Detection"
-              description="Trained a CNN classifier using 'FER-2013 dataset' with Keras and tensorflow backened. The classifier sucessfully predicted the various types of emotions of human. And the highest accuracy obtained with the model was 60.1%.
-              Then used Open-CV to detect the face in an image and then pass the face to the classifer to predict the emotion of a person."
-              ghLink="https://github.com/soumyajit4419/Face_And_Emotion_Detection"
-              // demoLink="https://blogs.soumya-jit.tech/"      <--------Please include a demo link here 
+              title="Taxi Trip Analytics with MapReduce"
+              description="Big Data project using MapReduce for taxi trip analysis, leveraging the Hadoop ecosystem."
+              ghLink="https://github.com/vigneshkr13/Taxi-Trip-Analytics"
             />
           </Col>
         </Row>

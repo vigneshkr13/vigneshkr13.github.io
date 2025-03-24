@@ -1,76 +1,53 @@
-<h2 align="center">
-  Portfolio Website - v2.0<br/>
-  <a href="https://soumyajit.vercel.app/" target="_blank">soumyajit.tech</a>
-</h2>
-<div align="center">
-  <img alt="Demo" src="./Images/readme-img1.png" />
-</div>
+# Hi there, I'm Vignesh Kumar 👋
 
-<br/>
+Welcome to my GitHub! I'm a passionate **Data Engineer** and **Cloud Enthusiast** from **India**, always eager to explore the world of **data science**, **cloud computing**, and **AI-powered solutions**. My goal is to turn raw data into powerful insights and scalable systems.
 
-<center>
+I enjoy solving complex problems, building robust data pipelines, and creating cloud-native applications that scale. I am always exploring new tools and technologies, striving to enhance my skill set and build solutions that make an impact.
 
-[![forthebadge](https://forthebadge.com/images/badges/built-with-love.svg)](https://forthebadge.com) &nbsp;
-[![forthebadge](https://forthebadge.com/images/badges/made-with-javascript.svg)](https://forthebadge.com) &nbsp;
-[![forthebadge](https://forthebadge.com/images/badges/open-source.svg)](https://forthebadge.com) &nbsp;
-![GitHub Repo stars](https://img.shields.io/github/stars/soumyajit4419/Portfolio?color=red&logo=github&style=for-the-badge) &nbsp;
-![GitHub forks](https://img.shields.io/github/forks/soumyajit4419/Portfolio?color=red&logo=github&style=for-the-badge)
+## About Me 🌟
 
-</center>
+- 🧑‍💻 **Current Role**: Working as a **Team Member** at **7-Eleven South Yarra**. In my free time, I dive deep into **Data Engineering**, **Cloud Engineering**, and **Machine Learning**.
+- 🎓 **Education**: Master's in **Data Science** from **RMIT University**.
+- 💼 **Past Experience**: Previously, I worked as a **BI Developer** at **Tata Consultancy Services**, where I designed ETL pipelines and integrated AI solutions.
+- ☁️ **Cloud Skills**: Proficient in **AWS**, **Azure**, and **Databricks**. I have experience building **serverless** applications and optimizing data processing workflows in the cloud.
+- 🛠️ **Tech Stack**: Python, SQL, **AWS Lambda**, **Apache Spark**, **ETL**, **Power BI**, **Flask**, **Next.js**, **Selenium**, **Talend**, **Kafka**, **Hadoop**, and **Machine Learning**.
 
-<h3 align="center">
-    🔹
-    <a href="https://github.com/soumyajit4419/Portfolio/issues">Report Bug</a> &nbsp; &nbsp;
-    🔹
-    <a href="https://github.com/soumyajit4419/Portfolio/issues">Request Feature</a>
-</h3>
+When I’m not coding, you’ll probably find me exploring **Melbourne**, enjoying a good cup of coffee, or playing a new game 🎮. I am also passionate about sharing my learnings, and I occasionally write **tech blogs**.
 
-## TL;DR
+## Projects 🚀
 
-You can fork this repo to modify and make changes of your own. Please give me proper credit by linking back to [Soumyajit4419](https://github.com/soumyajit4419/Portfolio). Thanks!
+Here are a few of the exciting projects I’ve been working on:
 
-## Built With
+- **[NLP Job Search App](https://github.com/vigneshkr13/NLP_JobSearch_App)**: An AI-powered job search web application using **Natural Language Processing (NLP)** to categorize job listings and improve job search efficiency.
+  
+- **[Recommender System Using Personalized Slope One](https://github.com/vigneshkr13/personalized-weighted-slope-one-recommender)**: A recommender system that enhances the traditional **Slope One** algorithm by integrating user similarity metrics for better personalization.
+  
+- **[Customer Purchase Analysis](https://github.com/vigneshkr13/Customer-Purchase-Analysis/tree/main)**: Predicts online shopper purchase behavior using **KNN** and **Decision Trees**, comparing their accuracies for better predictions.
 
-My personal portfolio <a href="https://soumyajit.vercel.app/" target="_blank">soumyajit.tech</a> which features some of my github projects as well as my resume and technical skills.<br/>
+- **[AWS Music Subscription Application](https://github.com/vigneshkr13/AWS-Music-Subscription-Application/tree/main)**: A cloud-based music subscription application built with **AWS** services such as EC2, S3, API Gateway, Lambda, and DynamoDB.
 
-This project was built using these technologies.
+- **[AI for Social Good](https://github.com/soumyajit4419/AI_For_Social_Good)**: Using **NLP** to detect suicide-related posts and ideations to help prevent suicides through early intervention.
 
-- React.js
-- Node.js
-- Express.js
-- CSS3
-- VsCode
-- Vercel
+- **[Taxi Trip Analytics with MapReduce](https://github.com/vigneshkr13/Taxi-Trip-Analytics)**: A **big data** project implementing **MapReduce** for analyzing large-scale taxi trip data using the **Hadoop ecosystem**.
 
-## Features
+## Skills & Tools 🛠️
 
-**📖 Multi-Page Layout**
+- **Programming**: Python, SQL, R
+- **Data Engineering**: ETL, **Informatica PowerCenter**, **Talend**, **Apache Spark**, **Hadoop**, **Kafka**, **Snowflake**
+- **Cloud Computing**: **AWS** (Lambda, EC2, S3), **Azure**, **Databricks**, **Serverless Computing**
+- **Frontend Development**: **Next.js**, HTML, CSS, JavaScript
+- **Backend Development**: **Flask**, **GraphQL**, **PostgreSQL**
+- **Machine Learning & AI**: Data Cleaning, Data Modeling, Predictive Modeling, **NLP**, AI Integration, and Visualization
 
-**🎨 Styled with React-Bootstrap and Css with easy to customize colors**
+## Connect With Me 🌍
 
-**📱 Fully Responsive**
+- 🔗 [LinkedIn](https://www.linkedin.com/in/vigneshkumar/)
+- 🌐 [Personal Portfolio](https://www.vigneshkumar.com)
+- ✉️ Email me: [vignesh.kumar@xyz.com](mailto:vignesh.kumar@xyz.com)
 
-## Getting Started
+## Fun Facts 🤓
 
-Clone down this repository. You will need `node.js` and `git` installed globally on your machine.
+- I’m a tech enthusiast, always exploring the latest trends in AI, cloud, and big data.
+- I am always on the lookout for **new learning opportunities** and love collaborating with others on exciting projects.
 
-## 🛠 Installation and Setup Instructions
-
-1. Installation: `npm install`
-
-2. In the project directory, you can run: `npm start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
-The page will reload if you make edits.
-
-## Usage Instructions
-
-Open the project folder and Navigate to `/src/components/`. <br/>
-You will find all the components used and you can edit your information accordingly.
-
-### Show your support
-
-Give a ⭐ if you like this website!
-
-<a href="https://www.buymeacoffee.com/soumyajit4419" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/v2/default-violet.png" alt="Buy Me A Coffee" height= "60px" width= "217px" ></a>
+Thanks for stopping by my GitHub! I’m always open to collaboration, so feel free to reach out if you’re working on something interesting or if you just want to chat about tech! 😄
