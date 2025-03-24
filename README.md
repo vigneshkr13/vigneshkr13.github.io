@@ -26,7 +26,7 @@ Here are a few of the exciting projects I’ve been working on:
 
 - **[AWS Music Subscription Application](https://github.com/vigneshkr13/AWS-Music-Subscription-Application/tree/main)**: A cloud-based music subscription application built with **AWS** services such as EC2, S3, API Gateway, Lambda, and DynamoDB.
 
-- **[AI for Social Good](https://github.com/soumyajit4419/AI_For_Social_Good)**: Using **NLP** to detect suicide-related posts and ideations to help prevent suicides through early intervention.
+- **[AI for Social Good](https://github.com/vigneshkr13/)**: Using **NLP** to detect suicide-related posts and ideations to help prevent suicides through early intervention.
 
 - **[Taxi Trip Analytics with MapReduce](https://github.com/vigneshkr13/Taxi-Trip-Analytics)**: A **big data** project implementing **MapReduce** for analyzing large-scale taxi trip data using the **Hadoop ecosystem**.
 
