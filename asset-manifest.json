@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/vigneshkr13.github.io/static/css/main.2c70321c.css",
+    "main.js": "/vigneshkr13.github.io/static/js/main.8a23511c.js",
+    "static/js/453.ace21015.chunk.js": "/vigneshkr13.github.io/static/js/453.ace21015.chunk.js",
+    "static/media/suicide.png": "/vigneshkr13.github.io/static/media/suicide.9c86cd7138a398c45fa5.png",
+    "static/media/slope_one.png": "/vigneshkr13.github.io/static/media/slope_one.046a3224d2ca65f31073.png",
+    "static/media/about.png": "/vigneshkr13.github.io/static/media/about.aee0f771fbfc1e7b8fa8.png",
+    "static/media/music_sub.png": "/vigneshkr13.github.io/static/media/music_sub.555bb38831e232118a3a.png",
+    "static/media/taxi_trip.webp": "/vigneshkr13.github.io/static/media/taxi_trip.f5cadd7a6078a5b5f640.webp",
+    "static/media/logo.png": "/vigneshkr13.github.io/static/media/logo.35765168ad861d67dfc9.png",
+    "static/media/job_search1.png": "/vigneshkr13.github.io/static/media/job_search1.0e6fd9a6038aaffeedee.png",
+    "static/media/customer_purchase.webp": "/vigneshkr13.github.io/static/media/customer_purchase.2d47e551aea6ae78ef02.webp",
+    "static/media/pre.svg": "/vigneshkr13.github.io/static/media/pre.4410c5baaa673cc131da.svg",
+    "index.html": "/vigneshkr13.github.io/index.html",
+    "main.2c70321c.css.map": "/vigneshkr13.github.io/static/css/main.2c70321c.css.map",
+    "main.8a23511c.js.map": "/vigneshkr13.github.io/static/js/main.8a23511c.js.map",
+    "453.ace21015.chunk.js.map": "/vigneshkr13.github.io/static/js/453.ace21015.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.2c70321c.css",
+    "static/js/main.8a23511c.js"
+  ]
+}
