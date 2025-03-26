@@ -1,24 +1,25 @@
 {
   "files": {
-    "main.css": "/static/css/main.82b05a41.css",
-    "main.js": "/static/js/main.2f34ce8f.js",
+    "main.css": "/static/css/main.da63e349.css",
+    "main.js": "/static/js/main.ce44a202.js",
     "static/js/453.ace21015.chunk.js": "/static/js/453.ace21015.chunk.js",
-    "static/media/suicide.png": "/static/media/suicide.9c86cd7138a398c45fa5.png",
-    "static/media/slope_one.png": "/static/media/slope_one.046a3224d2ca65f31073.png",
     "static/media/about.png": "/static/media/about.aee0f771fbfc1e7b8fa8.png",
-    "static/media/music_sub.png": "/static/media/music_sub.555bb38831e232118a3a.png",
-    "static/media/taxi_trip.webp": "/static/media/taxi_trip.f5cadd7a6078a5b5f640.webp",
+    "static/media/job_search1.jpg": "/static/media/job_search1.142c21e0544356b339ae.jpg",
     "static/media/logo.png": "/static/media/logo.35765168ad861d67dfc9.png",
-    "static/media/job_search1.png": "/static/media/job_search1.0e6fd9a6038aaffeedee.png",
-    "static/media/customer_purchase.webp": "/static/media/customer_purchase.2d47e551aea6ae78ef02.webp",
+    "static/media/customer_purchase.avif": "/static/media/customer_purchase.e071f779826fe421ac4c.avif",
+    "static/media/slope_one.avif": "/static/media/slope_one.e48d0ad378419caebf45.avif",
+    "static/media/taxi_trip.avif": "/static/media/taxi_trip.08b52ae28b9ead510fce.avif",
+    "static/media/visionverse-logo.jpg": "/static/media/visionverse-logo.7cbe035a4f67f548ea32.jpg",
+    "static/media/portfolio.avif": "/static/media/portfolio.3f1ed4687444d5c00001.avif",
+    "static/media/music_sub.avif": "/static/media/music_sub.01b9f7f6ddc8faae6e88.avif",
     "static/media/pre.svg": "/static/media/pre.4410c5baaa673cc131da.svg",
     "index.html": "/index.html",
-    "main.82b05a41.css.map": "/static/css/main.82b05a41.css.map",
-    "main.2f34ce8f.js.map": "/static/js/main.2f34ce8f.js.map",
+    "main.da63e349.css.map": "/static/css/main.da63e349.css.map",
+    "main.ce44a202.js.map": "/static/js/main.ce44a202.js.map",
     "453.ace21015.chunk.js.map": "/static/js/453.ace21015.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.82b05a41.css",
-    "static/js/main.2f34ce8f.js"
+    "static/css/main.da63e349.css",
+    "static/js/main.ce44a202.js"
   ]
 }
