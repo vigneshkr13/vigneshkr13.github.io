@@ -54,7 +54,7 @@ function Home2() {
             <h1 
               ref={title} 
               className="hidden"
-              style={{ fontSize: "2.6em" }}
+              style={{ fontSize: "3.1em" }}
             >
               LET ME <span className="purple"> INTRODUCE </span> MYSELF
             </h1>

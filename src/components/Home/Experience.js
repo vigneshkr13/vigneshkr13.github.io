@@ -1,7 +1,13 @@
 import React, { useEffect, useState, useRef } from "react";
 import { Container } from "react-bootstrap";
+import { FaPython, FaAws, FaNodeJs, FaReact, FaDatabase } from 'react-icons/fa';  
+import { SiPostgresql, SiNextdotjs, SiGraphql } from 'react-icons/si';
 import "./Experience.css";
 import Particle from "../Particle";
+
+// Replace these paths with the actual paths of your logo images
+import visionVerseLogo from "../../Assets/visionverse-logo.jpg";
+import tcsLogo from "../../Assets/tcs-logo.png";
 
 const experienceData = [
   {
@@ -17,6 +23,8 @@ const experienceData = [
       "Integrated a reward-based system in the Dine Seal app to enhance user engagement and incentivize repeat usage.",
       "Led end-to-end project phases, collaborating in a five-member Agile team."
     ],
+    logo: visionVerseLogo,
+    techIcons: [<FaPython />, <SiGraphql />, <SiPostgresql />, <SiNextdotjs />, <FaAws />]
   },
   {
     title: "Tata Consultancy Services Ltd",
@@ -31,6 +39,8 @@ const experienceData = [
       "Enhanced database performance, reducing query response time by 25% and improving system reliability.",
       "Designed and automated reporting dashboards using Cognos, streamlining data visualization for stakeholders."
     ],
+    logo: tcsLogo,
+    techIcons: [<FaDatabase />, <FaNodeJs />, <FaReact />, <FaAws />]
   },
 ];
 
@@ -43,7 +53,6 @@ function ExperienceTimeline() {
   const observerRef = useRef(null);
   const lastScrollTop = useRef(0);
 
-  // Function to calculate and set line height based on scroll position
   const updateLineHeight = () => {
     if (!timelineRef.current) return;
     
@@ -51,34 +60,26 @@ function ExperienceTimeline() {
     const timelineTop = timelineRect.top + window.scrollY;
     const timelineBottom = timelineRect.bottom + window.scrollY;
     
-    // Current scroll position
     const scrollTop = window.scrollY;
-    
-    // Calculate how much of the timeline is currently visible
     const viewportHeight = window.innerHeight;
     const viewportBottom = scrollTop + viewportHeight;
     
-    // If timeline is not yet in view, line height is 0
     if (viewportBottom < timelineTop) {
       setLineHeight(0);
       return;
     }
     
-    // If we've scrolled past the timeline, line is at full height
     if (scrollTop > timelineBottom) {
-      // Get the total height of the timeline
       const totalTimelineHeight = timelineBottom - timelineTop;
       setLineHeight(totalTimelineHeight);
       return;
     }
     
-    // Calculate progress through the timeline (as a percentage)
     const timelineProgress = Math.min(
       (viewportBottom - timelineTop) / (timelineBottom - timelineTop),
       1
     );
     
-    // Calculate the line height based on progress
     const totalHeight = timelineBottom - timelineTop;
     const newLineHeight = totalHeight * timelineProgress;
     
@@ -92,18 +93,15 @@ function ExperienceTimeline() {
       threshold: 0.1,
     };
 
-    // Set up intersection observer for timeline items
     observerRef.current = new IntersectionObserver((entries) => {
       entries.forEach(entry => {
         const index = parseInt(entry.target.dataset.index);
         
         if (entry.isIntersecting) {
-          // Add to visible items if not already there
           if (!visibleItems.includes(index)) {
             setVisibleItems(prev => [...prev, index].sort((a, b) => a - b));
           }
         } else {
-          // Remove from visible items
           if (visibleItems.includes(index)) {
             setVisibleItems(prev => prev.filter(i => i !== index));
           }
@@ -111,18 +109,13 @@ function ExperienceTimeline() {
       });
     }, options);
 
-    // Observe timeline items
     const timelineItems = document.querySelectorAll('.timeline-item');
     timelineItems.forEach(item => {
       observerRef.current.observe(item);
     });
 
-    // Set up window resize handler
-    const handleResize = () => {
-      updateLineHeight();
-    };
+    const handleResize = () => updateLineHeight();
     
-    // Set up scroll event for line animation
     const handleScroll = () => {
       requestAnimationFrame(updateLineHeight);
       lastScrollTop.current = window.scrollY;
@@ -131,27 +124,19 @@ function ExperienceTimeline() {
     window.addEventListener('scroll', handleScroll);
     window.addEventListener('resize', handleResize);
     
-    // Initial line height setup
     updateLineHeight();
 
     return () => {
       if (observerRef.current) {
-        timelineItems.forEach(item => {
-          observerRef.current.unobserve(item);
-        });
+        timelineItems.forEach(item => observerRef.current.unobserve(item));
       }
       window.removeEventListener('scroll', handleScroll);
       window.removeEventListener('resize', handleResize);
     };
-  }, [visibleItems]); // Include visibleItems as a dependency
+  }, [visibleItems]);
 
-  const handleCardHover = (index) => {
-    setActiveCard(index);
-  };
-
-  const handleCardLeave = () => {
-    setActiveCard(null);
-  };
+  const handleCardHover = (index) => setActiveCard(index);
+  const handleCardLeave = () => setActiveCard(null);
 
   return (
     <Container fluid className="home-about-section">
@@ -172,29 +157,60 @@ function ExperienceTimeline() {
             key={index}
             data-index={index}
             className={`timeline-item ${visibleItems.includes(index) ? "show" : ""}`}
-            style={{ 
-              left: index % 2 === 0 ? "0" : "50%", 
-              transitionDelay: `${index * 0.2}s` 
+            style={{
+              left: index % 2 === 0 ? "0" : "50%",
+              transitionDelay: `${index * 0.2}s`,
+              position: "relative", // Important for absolute positioning of tech stack
             }}
           >
             <div className="timeline-dot"></div>
-            <div 
+            <div
               className={`timeline-content ${activeCard === index ? "active" : ""}`}
               onMouseEnter={() => handleCardHover(index)}
               onMouseLeave={handleCardLeave}
               onClick={() => handleCardHover(index === activeCard ? null : index)}
             >
-              <h2>{exp.title}</h2>
+              <div className="company-logo-container">
+                <img
+                  src={exp.logo}
+                  alt={`${exp.title} logo`}
+                  className="company-logo"
+                />
+                <div className="company-info">
+                  <h2>{exp.title}</h2>
+                </div>
+              </div>
               <h3>{exp.position}</h3>
-              <p><strong>{exp.duration} | {exp.location}</strong></p>
+              <p>
+                <strong>{exp.duration} | {exp.location}</strong>
+              </p>
               <p className="tech-stack">Technologies: {exp.technologies}</p>
               <ul className="experience-details">
                 {exp.details.map((point, i) => (
-                  <li key={i} className={`detail-item ${activeCard === index ? "show-detail" : ""}`} style={{ transitionDelay: `${i * 0.1}s` }}>
+                  <li
+                    key={i}
+                    className={`detail-item ${activeCard === index ? "show-detail" : ""}`}
+                    style={{ transitionDelay: `${i * 0.1}s` }}
+                  >
                     {point}
                   </li>
                 ))}
               </ul>
+            </div>
+            <div
+              className={`tech-icons-wrapper ${index % 2 === 0 ? "left-side" : "right-side"}`}
+              style={{
+                position: "absolute",
+                top: "50%",
+                transform: "translateY(-50%)",
+                [index % 2 === 0 ? "left" : "right"]: "10px", // Alternating sides
+              }}
+            >
+              {exp.techIcons.map((icon, i) => (
+                <div key={i} className="tech-icon">
+                  {/* {icon} */}
+                </div>
+              ))}
             </div>
           </div>
         ))}

@@ -7,7 +7,7 @@ import { AiOutlineDownload } from "react-icons/ai";
 function ResumeNew() {
   // If your PDF is in the public folder
   const pdfPath = process.env.PUBLIC_URL + "/Vignesh_Kumar_Resume.pdf";
-  
+
   // Add parameters to hide toolbar and other UI elements
   const pdfWithParams = `${pdfPath}#toolbar=0&navpanes=0&scrollbar=0&statusbar=0`;
 
@@ -27,16 +27,23 @@ function ResumeNew() {
           </Button>
         </Row>
 
-        <Row className="resume">
-          <div className="d-flex justify-content-center" style={{ width: "50%" }}>
+        <Row className="resume" style={{ justifyContent: "center" }}>
+          <div
+            className="d-flex justify-content-center"
+            style={{
+              width: "80%", // Full width of the container
+              maxWidth: "140%", // Set maxWidth to 100% to make it more flexible
+            }}
+          >
             <iframe
               src={pdfWithParams}
-              width="140%" 
-              height="1200px"
+              width="100%" // Occupy full width of the container
+              height="1300px" // Increased height for a larger PDF view
               style={{
                 border: "none",
                 overflow: "hidden",
-                maxWidth: "2900px" // Adjust this value as needed
+                width: "100%", // Ensures the iframe stretches across the container
+                maxWidth: "100%", // Keeps it responsive
               }}
               title="Resume"
               frameBorder="0"

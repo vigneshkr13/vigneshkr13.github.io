@@ -2,12 +2,12 @@ import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import ProjectCard from "./ProjectCards";
 import Particle from "../Particle";
-import music_sub from "../../Assets/Projects/music_sub.png";
-import taxi_trip from "../../Assets/Projects/taxi_trip.webp";
-import customer_purchase from "../../Assets/Projects/customer_purchase.webp";
-import job_search from "../../Assets/Projects/job_search1.png";
-import suicide from "../../Assets/Projects/suicide.png";
-import slope_one from "../../Assets/Projects/slope_one.png";
+import music_sub from "../../Assets/Projects/music_sub.avif";
+import taxi_trip from "../../Assets/Projects/taxi_trip.avif";
+import customer_purchase from "../../Assets/Projects/customer_purchase.avif";
+import job_search from "../../Assets/Projects/job_search1.jpg";
+import portfolio from "../../Assets/Projects/portfolio.avif";
+import slope_one from "../../Assets/Projects/slope_one.avif";
 
 function Projects() {
   return (
@@ -63,11 +63,11 @@ function Projects() {
 
           <Col md={4} className="project-card mb-4">
             <ProjectCard
-              imgPath={suicide}
+              imgPath={portfolio}
               isBlog={false}
-              title="AI for Social Good"
-              description="Using NLP to detect suicide-related posts and ideations, aiding in prevention efforts."
-              ghLink="https://github.com/vigneshkr13/NLP_JobSearch_App"
+              title="My Portfolio Website"
+              description="A personal portfolio website built using React, showcasing my projects, skills, and experience with interactive UI elements and animations. Deployed using GitHub Pages."
+              ghLink="https://github.com/vigneshkr13/vigneshkr13.github.io"
             />
           </Col>
 

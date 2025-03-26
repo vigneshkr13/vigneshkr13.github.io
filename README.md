@@ -1,6 +1,6 @@
 # Hi there, I'm Vignesh Kumar 👋
 
-Welcome to my GitHub! I'm a passionate **Data Engineer** and **Cloud Enthusiast** from **India**, always eager to explore the world of **data science**, **cloud computing**, and **AI-powered solutions**. My goal is to turn raw data into powerful insights and scalable systems.
+Welcome to my GitHub! I'm a passionate **Data Engineer** and **Cloud Enthusiast**, always eager to explore the world of **data science**, **cloud computing**, and **AI-powered solutions**. My goal is to turn raw data into powerful insights and scalable systems.
 
 I enjoy solving complex problems, building robust data pipelines, and creating cloud-native applications that scale. I am always exploring new tools and technologies, striving to enhance my skill set and build solutions that make an impact.
 
@@ -8,11 +8,11 @@ I enjoy solving complex problems, building robust data pipelines, and creating c
 
 - 🧑‍💻 **Current Role**: Working as a **Team Member** at **7-Eleven South Yarra**. In my free time, I dive deep into **Data Engineering**, **Cloud Engineering**, and **Machine Learning**.
 - 🎓 **Education**: Master's in **Data Science** from **RMIT University**.
-- 💼 **Past Experience**: Previously, I worked as a **BI Developer** at **Tata Consultancy Services**, where I designed ETL pipelines and integrated AI solutions.
-- ☁️ **Cloud Skills**: Proficient in **AWS**, **Azure**, and **Databricks**. I have experience building **serverless** applications and optimizing data processing workflows in the cloud.
+- 💼 **Past Experience**:
+  - **Tata Consultancy Services (TCS)**: 2.5 years as a **BI Developer**, designing **ETL pipelines**, optimizing data workflows, and integrating AI-driven insights.
+  - **Vision Verse Interactive**: Worked on **AI-driven data solutions**, **database integrations**, and **automation workflows**. Developed AI-generated webpages in **under 2 minutes**.
+- ☁️ **Cloud Skills**: Proficient in **AWS**, **Azure**, and **Databricks**. Experienced in building **serverless** applications and optimizing **data processing workflows** in the cloud.
 - 🛠️ **Tech Stack**: Python, SQL, **AWS Lambda**, **Apache Spark**, **ETL**, **Power BI**, **Flask**, **Next.js**, **Selenium**, **Talend**, **Kafka**, **Hadoop**, and **Machine Learning**.
-
-When I’m not coding, you’ll probably find me exploring **Melbourne**, enjoying a good cup of coffee, or playing a new game 🎮. I am also passionate about sharing my learnings, and I occasionally write **tech blogs**.
 
 ## Projects 🚀
 
@@ -26,7 +26,7 @@ Here are a few of the exciting projects I’ve been working on:
 
 - **[AWS Music Subscription Application](https://github.com/vigneshkr13/AWS-Music-Subscription-Application/tree/main)**: A cloud-based music subscription application built with **AWS** services such as EC2, S3, API Gateway, Lambda, and DynamoDB.
 
-- **[AI for Social Good](https://github.com/vigneshkr13/)**: Using **NLP** to detect suicide-related posts and ideations to help prevent suicides through early intervention.
+- **[Portfolio Website](https://vigneshkr13.github.io/)**: A personal portfolio website built with **React.js**, **Framer Motion**, and **Bootstrap**, showcasing projects and achievements.
 
 - **[Taxi Trip Analytics with MapReduce](https://github.com/vigneshkr13/Taxi-Trip-Analytics)**: A **big data** project implementing **MapReduce** for analyzing large-scale taxi trip data using the **Hadoop ecosystem**.
 
@@ -42,8 +42,8 @@ Here are a few of the exciting projects I’ve been working on:
 ## Connect With Me 🌍
 
 - 🔗 [LinkedIn](https://www.linkedin.com/in/vigneshkumar/)
-- 🌐 [Personal Portfolio](https://www.vigneshkumar.com)
-- ✉️ Email me: [vignesh.kumar@xyz.com](mailto:vignesh.kumar@xyz.com)
+- 🌐 [Personal Portfolio](https://vigneshkr13.github.io/)
+- ✉️ Email me: [vignesh.kumar@xyz.com](ess.vigneshkr@gmail.com)
 
 ## Fun Facts 🤓
 
