@@ -7,10 +7,10 @@ import { AiOutlineDownload } from "react-icons/ai";
 function ResumeNew() {
   // If your PDF is in the public folder
   const pdfPath = process.env.PUBLIC_URL + "/Vignesh_Kumar_Resume.pdf";
-
+  
   // Add parameters to hide toolbar and other UI elements
   const pdfWithParams = `${pdfPath}#toolbar=0&navpanes=0&scrollbar=0&statusbar=0`;
-
+  
   return (
     <div>
       <Container fluid className="resume-section">
@@ -27,23 +27,26 @@ function ResumeNew() {
           </Button>
         </Row>
 
-        <Row className="resume" style={{ justifyContent: "center" }}>
+        <Row className="resume" style={{ justifyContent: "center", marginTop: "20px" }}>
           <div
             className="d-flex justify-content-center"
             style={{
-              width: "80%", // Full width of the container
-              maxWidth: "140%", // Set maxWidth to 100% to make it more flexible
+              width: "98%", // Maximum width for better readability
+              maxWidth: "1400px", // Increased max width for larger displays
             }}
           >
             <iframe
               src={pdfWithParams}
               width="100%" // Occupy full width of the container
-              height="1300px" // Increased height for a larger PDF view
+              height="2400px" // Significantly increased height for 2-page resume
               style={{
                 border: "none",
                 overflow: "hidden",
                 width: "100%", // Ensures the iframe stretches across the container
                 maxWidth: "100%", // Keeps it responsive
+                minHeight: "100vh", // Ensures minimum viewport height coverage
+                transform: "scale(1.1)", // Slightly scale up for better readability
+                transformOrigin: "top center", // Scale from top center
               }}
               title="Resume"
               frameBorder="0"
@@ -51,7 +54,7 @@ function ResumeNew() {
           </div>
         </Row>
 
-        <Row style={{ justifyContent: "center", position: "relative" }}>
+        <Row style={{ justifyContent: "center", position: "relative", marginTop: "20px" }}>
           <Button
             variant="primary"
             href={pdfPath}

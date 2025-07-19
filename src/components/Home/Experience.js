@@ -33,11 +33,11 @@ const experienceData = [
     location: "Tamil Nadu, India",
     technologies: "Informatica PowerCenter, Unix Shell Scripting, SQL, PL/SQL, Cognos, Excel",
     details: [
-      "Improved ETL workflows using Informatica, reducing processing time by 50% and increasing data accuracy by 30%.",
-      "Automated job scheduling with shell scripts, cutting manual interventions by 40% and improving monitoring efficiency by 25%.",
-      "Delivered 98% of sprint goals on time in Agile teams, optimizing backlog prioritization and project delivery.",
-      "Enhanced database performance, reducing query response time by 25% and improving system reliability.",
-      "Designed and automated reporting dashboards using Cognos, streamlining data visualization for stakeholders."
+      "Developed and maintained robust data pipelines using Azure Data Factory for a large-scale banking project",
+      "Leveraged Azure Databricks for complex data transformations and processing, implementing PySpark jobs to handle large scale banking datasets efficiently." ,
+      "Implemented medallion architecture (Bronze, Silver, Gold layers) to optimize data processing workflows, improving data quality and accessibility.",
+      "Enhanced database performance by implementing indexing strategies, partitioning, views, and CTEs, reducing query response time by 25%.",
+      "Designed comprehensive Power BI dashboards for banking stakeholders, enabling real-time data visualization and faster decision-making."
     ],
     logo: tcsLogo,
     techIcons: [<FaDatabase />, <FaNodeJs />, <FaReact />, <FaAws />]
