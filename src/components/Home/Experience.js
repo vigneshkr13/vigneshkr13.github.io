@@ -31,7 +31,7 @@ const experienceData = [
     position: "Data Engineer",
     duration: "Jan 2021 - Dec 2022",
     location: "Tamil Nadu, India",
-    technologies: "Informatica PowerCenter, Unix Shell Scripting, SQL, PL/SQL, Cognos, Excel",
+    technologies: "Azure Data Factory, Azure Synapse Analytics, SQL, Azure Databricks, Power BI, Azure SQL Database",
     details: [
       "Developed and maintained robust data pipelines using Azure Data Factory for a large-scale banking project",
       "Leveraged Azure Databricks for complex data transformations and processing, implementing PySpark jobs to handle large scale banking datasets efficiently." ,
